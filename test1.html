@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>three.js_test1</title>
+    <!-- three.jsの読み込み -->
+    <script src="./js/three.js"></script>
+    <!-- カメラ制御のOrbitControls.jsの読み込み-->
+    <script src="https://unpkg.com/three@0.137.4/examples/js/controls/OrbitControls.js"></script>
+    <!-- index.jsの読み込み -->
+    <script src="./js/index.js"></script>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .debug {
+            background-color: gray;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .debug p {
+            margin: 0;
+            color: white;
+            font-weight: bold;
+        }
+        .debug button {
+            margin: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="debug">
+        <p>ヘルパーの管理</p>
+        <button>AxisHelper</button>
+        <button>BoxHelper</button>
+        <button>CameraHelper</button>
+        <button>DirectionalLightHelper</button>
+        <button>EdgeHelper</button>
+        <button>GridHelper</button>
+    </div>
+    <canvas id="myCanvas"></canvas>
+</body>
+</html>
